@@ -5,16 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style.css" rel="stylesheet">
-  <script src="script,js" defer></script>
+  <script src="script.js" defer></script>
   <link rel="shortcut icon" href="icon.ico">
   <title>Calculator</title>
 </head>
 
 <body>
-  <div id="calculator-container">
+  <div id="calc-container">
+    <div id="calc-body">
+      <div id="calc-display"></div>
+      <div id="calc-buttons">
+        <div id="calc-digits">
+          <div class="buttons-row">
+            <button class="calc-button digit" data-val="7">7</button>
+            <button class="calc-button digit" data-val="8">8</button>
+            <button class="calc-button digit" data-val="9">9</button>
+          </div>
+          <div class="buttons-row">
+            <button class="calc-button digit" data-val="4">4</button>
+            <button class="calc-button digit" data-val="5">5</button>
+            <button class="calc-button digit" data-val="6">6</button>
+          </div>
+          <div class="buttons-row">
+            <button class="calc-button digit" data-val="1">1</button>
+            <button class="calc-button digit" data-val="2">2</button>
+            <button class="calc-button digit" data-val="3">3</button>
+          </div>
+          <div class="buttons-row">
+            <button id="button-zero" class="calc-button digit" data-val="0">0</button>
+            <button id="button-decimal" class="calc-button digit" data-val=".">.</button>
+          </div>
+        </div>
+        <div id="calc-operations">
+          <div class="buttons-col">
+            <button class="calc-button operation special" data-val="D">DEL</button>
+            <button class="calc-button operation" data-val="*">X</button>
+            <button class="calc-button operation" data-val="+">+</button>
+            <button class="calc-button operation" data-val="-">-</button>
+          </div>
+          <div class="buttons-col">
+            <button class="calc-button operation special" data-val="C">AC</button>
+            <button class="calc-button operation" data-val="/">/</button>
+            <button id="button-eq" class="calc-button operation" data-val="=">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
-
 </body>
 
 </html>

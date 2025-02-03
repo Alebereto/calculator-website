@@ -1,0 +1,111 @@
+/* disable default button style */
+button {
+  border-style: none;
+  padding: 0;
+}
+
+/* container of calculator */
+#calc-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  border-radius: 20px;
+  background-color: #525872;
+
+  width: 300px;
+  padding: 40px 25px;
+  aspect-ratio: 5 / 6;
+}
+
+/* display of calculator */
+#calc-display {
+  flex: 1;
+  background-color: #AF9D80;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 2px black;
+  color: black;
+  font-size: 125%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+}
+
+/* container for all buttons */
+#calc-buttons {
+  flex: 3.5;
+  display: flex;
+}
+
+.calc-button {
+  flex: 1;
+  background-color: #7D808A;
+  font-size: 100%;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px black;
+}
+.calc-button:active {
+  background-color: #6D707A;
+}
+
+/* container for digits */
+#calc-digits {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* digit button settings */
+.buttons-row {
+  display: flex;
+  flex: 1;
+}
+
+.calc-button.digit {
+  margin: 5%;
+}
+
+#button-zero {
+  flex: 2;
+}
+
+
+/* container for operations buttons */
+#calc-operations {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* operation button settings */
+.buttons-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#button-eq {
+  flex: 2;
+  background-color: #7D80DA;
+}
+#button-eq:active {
+  background-color: #6D70CA;
+}
+
+.calc-button.operation.special {
+  background-color: #AD6878;
+}
+.calc-button.operation.special:active {
+  background-color: #9D5868;
+}
+
+.calc-button.operation {
+  margin: 15%;
+  background-color: #5D505A;
+}
+.calc-button.operation:active {
+  background-color: #4D404A;
+}
